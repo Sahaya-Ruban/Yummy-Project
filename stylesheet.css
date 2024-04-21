@@ -1,0 +1,1149 @@
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.one{
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    border: 1px solid white;
+    width: 100%;
+    unicode-bidi: isolate;
+    top: 0;
+    transition: all 0.5s;
+}
+#a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    color: black;
+    cursor: pointer;
+}
+#a:hover::after{
+    width: 100%;
+}
+.two #a:active{
+    /* text-decoration-line: underline; */
+    color: orangered;
+
+}
+.two{
+    display: flex;
+    gap: 1.8rem;
+    font-size: 1.2rem;
+}
+.two #a{
+    text-decoration: none;
+    color: gray;
+}
+.two #a:hover{
+    color: black;
+}
+.yummybutton{
+    margin-bottom: 1.4rem;
+}
+.yummybutton button{
+    font-size: 1rem;
+}
+button{
+    border: none;
+    border-radius: 2rem;
+    padding: .8rem;
+    background-color: red;
+    border-color: red;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: inline;
+    width: 150px;
+    height: 2.5rem;
+    margin-top: 1rem;
+    transition: box-shadow 0.1s ease-in-out;
+}
+button:hover{
+    box-shadow: 0 0 20px red;
+}
+span{
+    color: orangered;
+}
+.three{
+    font-size: 3rem;
+    font-style:oblique;
+    padding-left: 7rem;
+    margin-top: 8rem;
+}
+.anime{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.three.anime{
+    animation-delay: 0.5s;
+}
+.four{
+    padding-left: 7rem;
+    font-size: 1.3rem;
+}
+.four.anime{
+    animation-delay: 1s;
+}
+#one{
+    margin-right: 2rem;
+    margin-top:2rem ;
+}
+.video{
+    display: flex;
+    gap: 2rem;
+    padding-left: 6rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.new_button{
+    font-size: 1rem;
+}
+.video.anime{
+    animation-delay: 1.5s;
+}
+.back{
+    /* z-index: -1; */
+    position: relative;
+    background-color: rgb(243, 236, 236);
+    display: flex; 
+}
+.image img{
+    padding-left:20rem ;
+    margin-top: 6rem;
+    margin-right: 5rem;
+}
+.image.anime1{
+    opacity: 0;
+    transform: scale(1.1);
+    animation: zoom 1.5s linear forwards;
+}
+@keyframes zoom{
+    50%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+.p{
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+.p:hover{
+    color: orangered;
+}
+#p{
+    font-size: 20px; 
+    display: flex;
+    text-align: center;
+}
+.fa-regular{
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+/* About CSS */
+.mainabout{
+    padding-top: 9rem;
+    /* z-index: -1; */
+    position: relative;
+}
+.about{
+    margin-left: 40rem;    
+}
+.learn{
+    margin-left: 35rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+.topic{
+    display: flex;
+    margin-right: 15rem;
+}
+.image1{
+    /* z-index: -1; */
+    margin-right: 10rem;
+    position: relative;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+.para{
+    font:1.5rem ;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#para{
+    margin-left: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.absolute{
+    /* z-index: -1; */
+    position: absolute;
+    background-color: white;
+    width: 20rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 13rem;
+    margin-top: 30rem;
+}
+.icon{
+    /* z-index: -1; */
+    font-size: 4rem;
+    position: absolute;
+    margin-left: 65rem;
+    margin-top: 35rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+}
+.icon:hover{
+    transform: scale(1.5);
+    filter: brightness(150%);
+    background-color: orangered;
+}
+.relative{
+    position: relative;
+    /* z-index: -1; */
+}
+#fa-solid{
+    background-color: white;
+    border-radius: 60%;
+    position: absolute;
+}
+
+/* choose */
+#choose{
+    display: flex;
+    background-color:rgb(243, 236, 236);
+    width: 100%;
+    height: 600px;
+}
+.choose1{
+    background-color: rgb(185, 7, 7);
+    color: white;
+    font-size: 1.2rem;
+    width: 320px;
+    height: 400px;
+    border: 1px solid;
+    text-align: center;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+#button{
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(224, 80, 80);
+    color: white;
+    border-color: rgb(224, 80, 80);
+    display: inline;
+    cursor: pointer;
+    width: 180px;
+}
+#button:hover{
+    background-color: white;
+    color: orangered;
+}
+.choose2{
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    border: 1px solid;
+    border-color: white;
+    margin-left: 1rem;
+    margin-top: 6rem;
+}
+.choose3{
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    border: 1px solid;
+    border-color: white;
+    margin-left: 1rem;
+    margin-top: 6rem;
+}
+.choose4{
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    border: 1px solid;
+    border-color: white;
+    margin-left: 1rem;
+    margin-top: 6rem;
+}
+.fa-sharp{
+    border: 1px solid rgb(245, 184, 184);
+    background-color: rgb(245, 184, 184);
+    border-radius: 100%;
+    width: 4rem;
+    height: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: red;
+    }
+.fa-gem{
+    border: 1px solid rgb(245, 184, 184);
+    background-color: rgb(245, 184, 184);
+    border-radius: 100%;
+    width: 4rem;
+    height: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: red;
+}
+.fa-inbox{
+    border: 1px solid rgb(245, 184, 184);
+    background-color: rgb(245, 184, 184);
+    border-radius: 100%;
+    width: 4rem;
+    height: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: red;
+}
+
+/* Recipe */
+.recipe{
+    /* z-index: -1; */
+    position: relative;
+}
+.recipe img{
+    display: flex;
+    background-image: url(./img/about_food-3.jpg);
+    width: 99%;
+    height: 450px; 
+    background-attachment:fixed;
+    filter: brightness(70%);
+    position: absolute;
+}
+.client{
+    color: white;
+    position: absolute;
+    margin-left: 8rem;
+    margin-top: 10rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.project{
+    color: white;
+    position: absolute;
+    margin-left: 25rem;
+    margin-top: 10rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.hour{
+    color: white;
+    position: absolute;
+    margin-left: 40rem;
+    margin-top: 10rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.work{
+    color: white;
+    position: absolute;
+    margin-left: 65rem;
+    margin-top: 10rem;
+    font-size: 2rem;
+    margin-right: 5rem;
+    text-align: center;
+}
+
+/* menu */
+
+.menu{
+    padding-top: 30rem;   
+}
+.menubar{
+    text-align: center;
+}
+.menubar p{
+    color: gray;
+    letter-spacing: .3rem;
+}
+.menunav{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+.menunav a{
+    padding-bottom: .5rem;
+}
+.menunava1{
+    border-bottom: 2px solid;
+    width: 80px;
+    color: orangered;
+}
+.menunava2{
+    border-bottom: 2px solid;
+    width: 95px;
+    color: gray;
+    text-decoration-line: gray;
+}
+.menunava2:hover{
+    color: orangered;
+    text-decoration-line: none;
+    border-color: rgb(202, 198, 198);
+}
+.menunava3{
+    border-bottom: 2px solid;
+    width: 76px;
+    color: gray;
+}
+.menunava3:hover{
+    color: orangered;
+    text-decoration-line:none;
+    border-color: rgb(202, 198, 198);
+}
+.menunava4{
+    border-bottom: 2px solid;
+    width: 80px;
+    color: gray;
+}
+.menunava4:hover{
+    color: orangered;
+    text-decoration-line:none;
+    border-color: rgb(202, 198, 198);
+}
+
+
+@font-face {
+        font-family: myfont;
+        src: url(./fonts/RubyExquiseDemoRegular.ttf);
+}
+.check{
+    font-family: myfont;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+}
+.food{
+    text-align: center;
+}
+.food p{
+    color: gray;
+    margin-top: 3rem;
+}
+.food h2{
+    font-size: 2rem;
+    margin-top: 1.3rem;
+    line-height: 2px;
+}
+.menufood {
+    display: flex;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+.menufood1{
+    display: flex;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+.menufood img{
+    padding-left: 5rem;
+    width: 300px;
+    height: 300px;
+}
+.menufood1 img{
+    padding-left: 5rem;
+    width: 300px;
+    height: 300px;
+}
+.a{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.a h3{
+    font-size: 1.5rem;
+    color: rgb(58, 56, 56);
+}
+.b{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* CEO */
+.ceo{
+    background-color: rgb(236, 232, 232);
+    height: 600px;
+}
+.owner{
+    text-align: center;
+    margin-top: 5rem;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.owner h2{
+    font-family: myfont;
+    letter-spacing: 0.3rem;
+}
+.quis{
+    border-left: 2px solid orangered;
+    margin-left: 20rem;
+    font-style: italic;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+.fa-quote-left{
+    color: rgb(241, 60, 96);
+
+}
+.fa-quote-right{
+    color: rgb(241, 60, 96);
+}
+.fa-star{
+    color: rgb(216, 216, 11);
+}
+.saul img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-right: 15rem;
+    background-color: white;
+}
+.abc{
+    display: flex;
+}
+.mainicon{
+    display: flex;
+    
+}
+.roundicon{
+    margin-left: 40rem;
+    letter-spacing: 0.7rem;
+    color: orangered;
+}
+.roundicon1{
+    letter-spacing: 0.7rem;
+    color: gray;
+    
+}
+/* Events */
+.eventsmain{
+    padding-top: 5rem;
+    /* z-index: -1; */
+    position: relative;
+}
+.events{
+    text-align: center;
+}
+.events p{
+    color: gray;
+}
+.events h2{
+    font-family: myfont;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+}
+.events_image{
+    display: flex;
+    background-size: cover;
+    width: 100%;
+}
+/* First Image */
+.events_image1{
+    position: relative;
+}
+.events_image1 img{
+    background-image: url(./img/events-1.jpg);
+    width: 445px;
+    height: 500px;
+    filter: brightness(50%);
+}
+#events_image1{
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    color: white;
+}
+#events_image1 h1{
+    border-bottom: 2px solid red;
+    width: 10%;
+}
+/* Second image */
+.events_image2{
+    position: relative;
+}
+.events_image2 img{
+    background-image: url(./img/events-2.jpg);
+    width: 445px;
+    height: 500px;
+    filter: brightness(50%);
+}
+#events_image2{
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    color: white;
+}
+#events_image2 h1{
+    border-bottom: 2px solid red;
+    width: 15%;
+}
+/* Third image */
+.events_image3{
+    position: relative;
+}
+.events_image3 img{
+    background-image: url(./img/events-3.jpg);
+    width: 445px;
+    height: 500px;
+    filter: brightness(50%);
+}
+#events_image3{
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    color: white;
+}
+#events_image3 h1{
+    border-bottom: 2px solid red;
+    width: 15%;
+}
+/* chefs */
+.chefs{
+    background-color: rgb(238, 234, 234);
+    height: 800px;
+    margin-top: 5rem;
+}
+.chefs1{
+    text-align: center;
+    font-family: myfont;
+    padding-top: 2rem;
+}
+.chefs1 h5{
+    color: gray;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.chefs1 h2{
+    font-size: 2rem;
+    letter-spacing: .5rem;
+}
+.chefs_image{
+    display: flex;
+    background-size: cover;
+    width: 99%;
+    text-align: center;
+}
+/* First Image */
+.chefs_image1{
+    background-color: white;
+    margin-left: 7rem;
+}
+.chefs_image1 h3{
+    font-size: 1.5rem;
+}
+.chefs_image1 img{
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+}
+#p1{
+    color: gray;
+    font-size: 1.1rem;
+    line-height: 1px;
+}
+#p2{
+    font-style: italic;
+    color: gray;
+}
+/* Second Image */
+.chefs_image2{
+    background-color: white;
+    margin-left: 1.5rem;
+}
+.chefs_image2 h3{
+    font-size: 1.5rem;
+}
+.chefs_image2 img{
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+}
+/* Third Image */
+.chefs_image3{
+    background-color: white;
+    margin-left: 1.5rem;
+}
+.chefs_image3 h3{
+    font-size: 1.5rem;
+}
+.chefs_image3 img{
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+/* BOOK A TABLE */
+.table{
+    margin-top: 5rem;
+}
+.table1{
+    text-align: center;
+}
+.table1 h5{
+    color: gray;
+    letter-spacing: .2rem;  
+}
+.table1 h2{
+    font-family: myfont;
+    letter-spacing: .3rem;
+    font-size: 2rem;
+}
+.table_img img{
+    width: 370px;
+    height: 450px;
+    margin-left: 6rem;
+}
+.table_img{
+    display: flex;
+    width: 78rem;
+}
+.table_main{
+    padding-left: 3rem;
+    background-color: rgb(243, 239, 239);
+}
+.table_form{
+    padding-top: 3rem;
+}
+.table_form td input{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+.table_form tr input{
+    margin-right: 1rem;
+    padding-left: 1rem;
+}
+.table_main textarea{
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.table_main button{
+    margin-left: 17rem;
+    width: 13rem;
+    height: 4rem;
+    background-color: red;
+    font-size: 1.1rem;
+}
+/* Galaery */
+.maingallery{
+    margin-top: 5rem;
+    background-color: rgb(243, 239, 239);
+    height: 550px;
+}
+.gallery{
+    text-align: center;
+    padding-top: 2rem;
+}
+.gallery h5{
+    color: gray;
+    letter-spacing: .2rem;
+}
+.gallery h2{
+    font-family: myfont;
+    letter-spacing: .3rem;
+    font-size: 2rem;
+}
+.galleryimg{
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+.galleryimg1{
+    margin-left: 5rem;
+}
+.galleryimg1{
+    margin-top: 1rem;
+}
+.galleryimg2{
+    margin-left: 2rem;
+}
+.galleryimg2{
+    margin-top: 1rem;
+}
+.galleryimg3{
+    margin-left: 2rem;
+    border: 7px solid red;
+    width: 220px;
+    height: 220px;
+    padding-bottom: 1rem;
+}
+.galleryimg4{
+    margin-left: 2rem;
+}
+.galleryimg4{
+    margin-top: 1rem;
+}
+.galleryimg5{
+    margin-left: 2rem;
+}
+.galleryimg5{
+    margin-top: 1rem;
+}
+.mainicon1{
+    display: flex;
+    margin-top: 3rem;
+}
+.roundicon2{
+    margin-left: 40rem;
+    letter-spacing: 0.7rem;
+    color: orangered;
+}
+.roundicon3{
+    letter-spacing: 0.7rem;
+    color: gray;
+}
+/* Contact */
+.contactmain{
+    padding-top: 5rem;
+}
+.contact{
+    text-align: center;
+}
+.contact h5{
+    color: gray;
+    letter-spacing: .2rem;
+}
+.contact h2{
+    font-family: myfont;
+    letter-spacing: .3rem;
+    font-size: 2rem;
+}
+.fa-question{
+    color: rgb(66, 66, 66);
+}
+.map{
+    margin-left: 5rem;
+}
+/* Address */
+.addressmain{
+    margin-top: 2rem;
+}
+/* map */
+.map1{
+    display: flex;
+}
+.address1{
+    display: flex;
+    background-color: rgb(240, 235, 235);
+    width: 45%;
+    margin-left: 5rem;
+    padding-left: 1rem;
+    height: 7rem;
+}
+#address1{
+    color: white;
+}
+.fa-map{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    border: 15px solid red;
+    background-color: red;
+    border-radius: 100%;
+}
+/* email */
+.address2{
+    display: flex;
+    background-color: rgb(240, 235, 235);
+    width: 40%;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    height: 7rem;
+}
+#address2{
+    color: white;
+}
+.fa-envelope{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    border: 15px solid red;
+    background-color: red;
+    border-radius: 100%;
+}
+#address3 h2{
+    color: gray;
+}
+.map2{
+    display: flex;
+}
+/* Call us */
+.address3{
+    display: flex;
+    background-color: rgb(240, 235, 235);
+    width: 45%;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    height: 7rem;
+}
+#address4{
+    color: white;
+}
+.fa-phone{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    border: 15px solid red;
+    background-color: red;
+    border-radius: 100%;
+}
+#address3{
+    margin-left: 1rem;
+}
+/* Opening Hours */
+.address4{
+    display: flex;
+    background-color: rgb(240, 235, 235);
+    width: 40%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    height: 7rem;
+}
+#address5{
+    color: white;
+}
+.fa-share-nodes{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    border: 15px solid red;
+    background-color: red;
+    border-radius: 100%;
+}
+/* Contact table */
+#contacttable{
+    display: flex;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+#contacttable1 input{
+    width: 580px;
+    height: 3rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    padding-left: .5rem;
+    padding-top: .5rem;
+}
+#contacttable2 input{
+    width: 520px;
+    height: 3rem;
+    margin-left: 3rem;
+    font-size: 1rem;
+    padding-left: .5rem;
+    padding-top: .5rem;
+}
+#contacttable3 input{
+    margin-left: 6rem;
+    margin-top: 1rem;
+    width: 1160px;
+    height: 3rem;
+    font-size: 1.1rem;
+    padding-left: .5rem;
+    padding-top: .5rem;
+}
+#contacttable4 textarea{
+    margin-top: 1rem;
+    margin-left: 6rem;
+    width: 1160px;
+    height: 6rem;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+#contacttable5{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+#contacttable5 button{
+    height: 3rem;
+    width: 13rem;
+    font-size: 1.2rem;
+}
+/* Final */
+.finalmain{
+    margin-top: 5rem;
+    background-color:#1F1F24;
+    width: 100%;
+    height: 30rem;
+}
+.final{
+    display: flex;
+    padding-top: 8rem;
+}
+/* one */
+.final1{
+    display: flex;
+    margin-left: 5rem;
+    color: white;
+}
+.fa-location-dot{
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+    color: white;
+}
+#final2{
+    margin-left: 1rem;
+}
+/* two */
+.final2{
+    display: flex;
+    margin-left: 5rem;
+    color: white;
+}
+#final4{
+    margin-left: 1rem;
+}
+.fa-phone-flip{
+    rotate: 90deg;
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+    color: white;
+}
+/* three */
+.final3{
+    display: flex;
+    margin-left: 5rem;
+    color: white;
+}
+#final6{
+    margin-left: 1rem;
+}
+.fa-clock{
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+    color: white;
+}
+/* four */
+.final4{
+    margin-left: 5rem;
+    color: white;
+}
+#final8{
+    color: white;
+    display: flex;
+}
+.fa-twitter{
+   font-size: 1rem;
+   border: 1px solid gray;
+   color: rgb(202, 198, 198);
+   padding: 8px 8px;
+   border-radius: 100%;
+   cursor: pointer;
+}
+.fa-twitter:hover{
+    border-color: white;
+    color: white;
+}
+.fa-facebook{
+    font-size: 1rem;
+    margin-left: .5rem;
+    border: 1px solid gray;
+    color: rgb(202, 198, 198);
+    padding: 8px 8px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.fa-facebook:hover{
+    border-color: white;
+    color: white;
+}
+.fa-instagram{
+    font-size: 1rem;
+    margin-left: .5rem;
+    color: rgb(202, 198, 198);
+    border: 1px solid gray;
+    padding: 8px 8px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.fa-instagram:hover{
+    border-color: white;
+    color: white;
+}
+.fa-linkedin{
+    font-size: 1rem;
+    margin-left: .5rem;
+    color: rgb(202, 198, 198);
+    border: 1px solid gray;
+    padding: 8px 8px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.fa-linkedin:hover{
+    border-color: white;
+    color: white;
+}
+.c_final{
+    text-align: center;
+    border-top: 1px solid white;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    height: 10rem;
+    width: 70rem;
+}
+.c_icon{
+    display: flex;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 30rem;
+}
+.fa-copyright{
+    margin-top: 1.2rem;
+    font-size: 0.8rem;
+}
+.c_icon p{
+    padding-right: 5rem;
+}
+.uparrow #uparrow{
+    font-size: 15px;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: rgb(201, 0, 0);
+    bottom: 10px;
+    right: 30px;
+    opacity: 1;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4rem;
+}
+.uparrow #uparrow:hover{
+    background-color: rgb(226, 30, 30);
+}
